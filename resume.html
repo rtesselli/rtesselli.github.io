@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume of Riccardo Tesselli</title>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: #334960;
+}
+blockquote {
+  font-size: 1em;
+}
+
+.container{
+  margin-top: 80px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+#photo-header{
+  margin-top: -75px;
+}
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
+  display: inline-block;
+}
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span{
+  color: #334960;
+  opacity: 0.7;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  content: '';
+  display: block;
+}
+
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.box h2{
+  color: #227c74;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#awards,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year,
+#education .year{
+  width: 14%;
+  background: #fff;
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: #eee;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#awards .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #eee;
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+    opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #eee;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
+
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: #334960;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #227c74;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
+
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+    </style>
+    <style type="text/css" media="print">
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+#photo{
+  display: none;
+}
+
+.box {
+  margin-bottom: -10px;
+}
+
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests {
+  page-break-inside: avoid;
+}
+
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
+
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
+
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
+
+#awards .description,
+#education .description,
+.job .details {
+  border: 1px solid #eee;
+}
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.badge {
+  margin: 0;
+}
+
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="https:&#x2F;&#x2F;tesstas.duckdns.org&#x2F;local&#x2F;pic.jpeg" alt="avatar">
+            </div>
+            <div id="text-header" >
+              <h1>Riccardo Tesselli<br><span>Data Engineer</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fas fa-user ico"></i> About</h2>
+            <p>Experienced Analyst with a demonstrated history of working in machine learning and computer vision projects. Skilled in Computer Science, development and deep learning. Enthusiast about Artificial intelligence and its applications.</p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Infinitas Learning Technology
+                    </div>
+                    <div class="address">
+                      <a href="www.infinitaslearning.com" target= "_blank"><i class="fas fa-globe ico"></i> www.infinitaslearning.com</a>
+                    </div>
+                    <div class="year">October 2021 – Present</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Data Engineer</div>
+                    <div class="description">
+                      Creation of a modern and scalable data platform
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Main technologies: Python, Snowflake, Terraform</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Prometeia S.p.A.
+                    </div>
+                    <div class="address">
+                      <a href="www.prometeia.it" target= "_blank"><i class="fas fa-globe ico"></i> www.prometeia.it</a>
+                    </div>
+                    <div class="year">July 2020 – September 2020</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior ML Engineer</div>
+                    <div class="description">
+                      As Sr. ML Engineer, my main tasks are to design ML software architectures, coordinate small teams of data scientists and share results with the stakeholders.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Main technologies: Python, Pandas, Numpy, Jupyter, Scikit-learn, SQL, PySpark, AWS, Docker, FastAPI</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Prometeia S.p.A
+                    </div>
+                    <div class="address">
+                      <a href="www.prometeia.it" target= "_blank"><i class="fas fa-globe ico"></i> www.prometeia.it</a>
+                    </div>
+                    <div class="year">November 2018 – June 2020</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Data Scientist</div>
+                    <div class="description">
+                      Within the Data Science business line, I develop data-driven solutions in different application domains such as insurance and banking.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Main technologies: Python, Pandas, Numpy, Jupyter, Scikit-learn, SQL, Keras, Scala, Spark, GCP</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Sysdata S.p.A.
+                    </div>
+                    <div class="address">
+                      <a href="www.sysdata.it" target= "_blank"><i class="fas fa-globe ico"></i> www.sysdata.it</a>
+                    </div>
+                    <div class="year">June 2017 – November 2018</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">R&amp;D Consultant</div>
+                    <div class="description">
+                      Worked as full-time R&D consultant at YNAP.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      YOOX NET-A-PORTER GROUP
+                    </div>
+                    <div class="address">
+                      <a href="www.ynap.com" target= "_blank"><i class="fas fa-globe ico"></i> www.ynap.com</a>
+                    </div>
+                    <div class="year">June 2017 – November 2018</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">R&amp;D Consultant</div>
+                    <div class="description">
+                      Within the R&D department I joined the ML team, my main goal was to develop and research deep learning solutions to solve computer vision problems.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Main technologies: Python, Numpy, Keras, Tensorflow, Caffe, Jupyter, OpenCV, Scikit-learn, AWS, Android</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Datalogic
+                    </div>
+                    <div class="address">
+                      <a href="www.datalogic.com" target= "_blank"><i class="fas fa-globe ico"></i> www.datalogic.com</a>
+                    </div>
+                    <div class="year">October 2015 – May 2017</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Junior Algorithms Engineer</div>
+                    <div class="description">
+                      I worked in the R&D division within the team in charge of developing the main vision library. My main task was to develop traditional computer vision algorithms for localizing and decoding 1D/2D barcodes and OCR symbologies in embedded architectures.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Main technologies: C++, ARM, Visual Studio, IBM Jazz</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      University of Padova
+                    </div>
+                    <div class="address">
+                      <a href="www.unipd.it" target= "_blank"><i class="fas fa-globe ico"></i> www.unipd.it</a>
+                    </div>
+                    <div class="year">October 2014 – June 2015</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Main Tutor</div>
+                    <div class="description">
+                      I was the main teaching tutor for the Computer Science degree. I taught Computer Architecture and Programming.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Freelance
+                    </div>
+                    <div class="year">July 2014 – December 2014</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Software Developer</div>
+                    <div class="description">
+                      I developed a couple of innovative projects for a museum with a focus on computer vision and human natural interaction.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Main technologies: Unity, C#, OpenCV, C++, Kinect</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      University of Padova
+                    </div>
+                    <div class="year">September 2013 – January 2014</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Tutor</div>
+                    <div class="description">
+                      Teaching tutor for the Computer Science degree. I taught Computer Architectures
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Associazione Culturale Albert Einstein
+                    </div>
+                    <div class="year">March 2013 – June 2013</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Teacher</div>
+                    <div class="description">
+                      I gave private lessons to high school students. The main topics were computer science, computer systems, and electornics.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Sake
+                    </div>
+                    <div class="address">
+                      <a href="http:&#x2F;&#x2F;bio.dei.unipd.it&#x2F;sake&#x2F;cgi-bin&#x2F;index.cgi" target= "_blank"><i class="fas fa-globe ico"></i> http:&#x2F;&#x2F;bio.dei.unipd.it&#x2F;sake&#x2F;cgi-bin&#x2F;index.cgi</a>
+                    </div>
+                    <div class="year">October 2012 – January 2013</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Software Developer</div>
+                    <div class="description">
+                      From a successfull academic experience, my team was hired to develop a stand-alone application to compute spectral analysis on 4D PET data. Also the website was developed with accessibility design patterns.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Main technologies: C++, QT, XML, XSLT, CSS</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      NASA Ames Research Center
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.nasa.gov&#x2F;ames&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.nasa.gov&#x2F;ames&#x2F;</a>
+                    </div>
+                    <div class="year">June 2012 – September 2012</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Trainee</div>
+                    <div class="description">
+                      For the Bachelor Degree thesis, I worked as a trainee within a NASA research project for the noise reduction of aircrafts. My main task was to test AI optimization algorithms.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Main technologies: Java, NetBeans</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- AWARDS -->
+          <div class="box">
+            <h2><i class="fas fa-certificate ico"></i> Awards</h2>
+            <ul id="awards" class="clearfix">
+              <li>
+                <div class="year pull-left">April  2013</div>
+                <div class="description pull-right">
+                  <h3>Computer Methods and Programs in Biomedicine</h3>
+                  <p><i class="fas fa-trophy ico"></i> Cited by</p>
+                  <p>Cited in https://kclpure.kcl.ac.uk/portal/en/publications/sake(78d21bb7-407c-4af3-8283-86c563693208).html for the implementation of the SAKE application.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- PROJECTS -->
+          <div class="box">
+            <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span style="font-weight:bold">FastTrackAI</span>: Fast automatic car damage estimation
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight:bold">Global Investment Portfolio</span>: Gather investments from open banking data
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight:bold">YQACAT</span>: Classify garments from pictures
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight:bold">YCAF</span>: OCR-based Android app
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight:bold">RX Body</span>: Kinect-based magic mirror
+              </li>
+              <li class="list-group-item">
+                <span style="font-weight:bold">RX Table</span>: Interactive computer vision-powered table
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
+              <div class="title pull-right">Via De&#39; Carracci 69&#x2F;22</div>
+              <div class="title  pull-right">Bologna, Emilia-Romagna 40129 IT</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">+39 338 2613795</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:riccardo.tesselli@gmail.com" target="_blank">riccardo.tesselli@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-globe fa-fw"></span></div>
+              <div class="title only pull-right"><a href="https:&#x2F;&#x2F;tesstas.duckdns.org&#x2F;local&#x2F;me.html" target="_blank">https:&#x2F;&#x2F;tesstas.duckdns.org&#x2F;local&#x2F;me.html</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
+              <div class="title pull-right">LinkedIn</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;riccardo-tesselli-bb044530&#x2F;" target="_blank">https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;riccardo-tesselli-bb044530&#x2F;</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-github fa-fw"></span></div>
+              <div class="title pull-right">GitHub</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;rtesselli&#x2F;" target="_blank">https:&#x2F;&#x2F;github.com&#x2F;rtesselli&#x2F;</a></div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fas fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2020 2020</div>
+                <div class="description pull-right">
+                  <h3>Coursera</h3>
+                  <div class="where"></div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Specialization</p>
+                  <p>Architecting with Google Kubernetes Engine</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2012 2015</div>
+                <div class="description pull-right">
+                  <h3>Università degli Studi di Padova</h3>
+                  <div class="where"></div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Master Degree</p>
+                  <p>Computer Science</p>
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Thesis: Adding Contextual Information to Graph Kernels</li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2014 2014</div>
+                <div class="description pull-right">
+                  <h3>Katholieke Universiteit Leuven</h3>
+                  <div class="where"></div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Advanced Master in Artificial Intelligence</p>
+                  <p>LLP Program</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2009 2012</div>
+                <div class="description pull-right">
+                  <h3>Università degli Studi di Padova</h3>
+                  <div class="where"></div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Bachelor Degree</p>
+                  <p>Computer Science</p>
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Thesis: Extensive Testing the Local Search Approach Within the Trajectory Noise Optimization Problem</li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2004 2009</div>
+                <div class="description pull-right">
+                  <h3>ITIS Nullo Baldini</h3>
+                  <div class="where"></div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> High School degree</p>
+                  <p>Computer Science Expert</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fas fa-tasks ico"></i> Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  ML Stack
+                  <span class="skill-level">Master</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Python</span>
+                <span class= "skill badge">Pandas</span>
+                <span class= "skill badge">Numpy</span>
+                <span class= "skill badge">Scikit-learn</span>
+                <span class= "skill badge">Keras</span>
+                <span class= "skill badge">NLTK</span>
+                <span class= "skill badge">Spacy</span>
+                <span class= "skill badge">Matplotlib</span>
+                <span class= "skill badge">Jupyter</span>
+                <span class= "skill badge">SQL</span>
+                <span class= "skill badge">PySpark</span>
+                <span class= "skill badge">OpenCV</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Programming
+                  <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">C++</span>
+                <span class= "skill badge">Java</span>
+                <span class= "skill badge">Scala</span>
+                <span class= "skill badge">C#</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Cloud
+                  <span class="skill-level">Advanced</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">AWS</span>
+                <span class= "skill badge">GCP</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Tools
+                  <span class="skill-level">Advanced</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Git</span>
+                <span class= "skill badge">Pycharm</span>
+                <span class= "skill badge">Pytest</span>
+                <span class= "skill badge">FastAPI</span>
+                <span class= "skill badge">Docker</span>
+                <span class= "skill badge">Visual Studio</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Other
+                  <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Unity 3D</span>
+                <span class= "skill badge">Latex</span>
+                <span class= "skill badge">QT</span>
+              </div>
+            </div>
+          </div>
+          <!-- PUBLICATIONS -->
+          <div class="box">
+            <h2><i class="fas fa-book ico"></i> Publications</h2>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">Extending local features with contextual information in graph kernels</div>
+              </div>
+              <div class="panel-body">
+                <div class="publisher"><i class= "fas fa-bookmark ico"></i> International Conference on Neural Information Processing</div>
+                <div class="year">31 December  2015</div>
+                <p>Graph kernels are usually defined in terms of simpler kernels over local substructures of the original graphs. Different kernels consider different types of substructures. However, in some cases they have similar predictive performances, probably because the substructures can be interpreted as approximations of the subgraphs they induce. In this paper, we propose to associate to each feature a piece of information about the context in which the feature appears in the graph. A substructure appearing in two different graphs will match only if it appears with the same context in both graphs. We propose a kernel based on this idea that considers trees as substructures, and where the contexts are features too. The kernel is inspired from the framework in [6], even if it is not part of it. We give an efficient algorithm for computing the kernel and show promising results on real-world graph classification datasets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
